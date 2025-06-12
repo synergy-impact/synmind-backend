@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                     // Modern enough JS for Node 14+
+    "module": "commonjs",                   // Node.js module system
+    "outDir": "./dist",                     // Compile output folder
+    "rootDir": "./src",                     // Source code folder
+    "strict": true,                        // Strong type checks (best practice)
+    "esModuleInterop": true,               // Smooth import from CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true                   // Speed up build by skipping type checks on dependencies
+  },
+  "include": ["src/**/*"],                 // Only compile source files
+  "exclude": ["node_modules", "dist"]     // Exclude dependencies and build output
+}
