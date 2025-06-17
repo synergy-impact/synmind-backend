@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const firebase_admin_1 = __importDefault(require("firebase-admin"));
 const path_1 = __importDefault(require("path"));
-const serviceAccount = require(path_1.default.resolve(__dirname, "../config/serviceAccountKey.json"));
+const serviceAccount = require(path_1.default.resolve(__dirname, "../serviceAccountKey.json"));
 firebase_admin_1.default.initializeApp({
     credential: firebase_admin_1.default.credential.cert(serviceAccount),
 });
