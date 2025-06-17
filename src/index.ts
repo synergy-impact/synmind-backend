@@ -4,7 +4,7 @@ import path from "path";
 
 const serviceAccount = require(path.resolve(
   __dirname,
-  "../config/serviceAccountKey.json"
+  "serviceAccountKey.json"
 ));
 
 admin.initializeApp({
